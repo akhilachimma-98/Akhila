@@ -1,0 +1,14 @@
+com\ledgerline\service\AuthService.class
+com\ledgerline\repository\AuditLogRepository.class
+com\ledgerline\config\DataInitializer.class
+com\ledgerline\entity\LedgerEntry.class
+com\ledgerline\entity\Transaction.class
+com\ledgerline\entity\AuditLog.class
+com\ledgerline\entity\User.class
+com\ledgerline\repository\UserRepository.class
+com\ledgerline\entity\Account.class
+com\ledgerline\LedgerLineApplication.class
+com\ledgerline\entity\BaseEntity.class
+com\ledgerline\repository\LedgerEntryRepository.class
+com\ledgerline\repository\AccountRepository.class
+com\ledgerline\repository\TransactionRepository.class

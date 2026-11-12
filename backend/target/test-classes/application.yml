@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: ledgerline-backend-test
+
+  datasource:
+    # Automated tests run against a SEPARATE test database.
+    # This prevents test-generated accounts from polluting ledgerline_db (the demo/production DB).
+    url: jdbc:mysql://localhost:3306/ledgerline_test_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: Akhila@98
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 30
+      connection-timeout: 30000
+      minimum-idle: 10
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop   # fresh schema per test run; destroyed after
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-ms: 86400000
