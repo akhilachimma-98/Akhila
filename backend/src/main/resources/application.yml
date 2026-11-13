@@ -3,14 +3,11 @@ spring:
     name: ledgerline-backend
 
   datasource:
-    url: jdbc:mysql://localhost:3306/ledgerline_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: root
-    password: Akhila@98
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
-      maximum-pool-size: 30
-      connection-timeout: 30000
-      minimum-idle: 10
+  spring:
+  datasource:
+    url: $23b294f715e3c89ca149cd1b22bc5e07
+    username: $23b294f715e3c89ca149cd1b22bc5e07
+    password: $b3698ef2185966fa2575beb9f5c8bf35
 
   jpa:
     hibernate:
